@@ -1,3 +1,273 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+* {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+}
+
+nav {
+  background-color: #770901 !important;
+
+  div.container-fluid {
+    a.navbar-brand {
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+
+    button {
+      color: #770901 !important;
+      background-color: #f2efeb !important;
+    }
+
+    div#navbarNav {
+      ul {
+        li {
+          a {
+            &.active {
+              color: #770901;
+              background-color: #f2efeb;
+
+              &:hover {
+                color: #f2efeb;
+                background-color: #770901;
+                border: 3px solid #f2efeb;
+              }
+            }
+
+            color: #f2efeb;
+
+            &:hover {
+              text-decoration: underline 3px solid #f2efeb;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section#howItWorks {
+  background-color: #770901;
+  color: #f2efeb;
+
+  h2 {
+    span {
+      border: 3px solid #f2efeb;
+    }
+  }
+
+  div#works-intro {
+    p {
+      color: #770901;
+      background-color: #f2efeb;
+    }
+  }
+
+  div#works-instructions {
+    div.row {
+      div {
+        border: 3px solid #f2efeb;
+      }
+    }
+  }
+}
+
+section#aboutUs {
+  background-color: #f2efeb;
+  color: #770901;
+
+  div#aboutUS-intro {
+    p {
+      background-color: #770901;
+      color: #f2efeb;
+    }
+  }
+
+  div#aboutUS-reasons {
+    div.inner-container {
+      border: 3px solid #770901;
+    }
+  }
+}
+
+section#testimonials {
+  background-color: #770901;
+  color: #f2efeb;
+
+  h2 {
+    span {
+      border: 3px solid #f2efeb;
+    }
+  }
+
+  div#testimonials-intro {
+    p {
+      color: #770901;
+      background-color: #f2efeb;
+    }
+  }
+
+  div#carouselExampleIndicators {
+    div.carousel-inner {
+      div.carousel-item {
+        div.container {
+          div.row {
+            background-color: #f2efeb;
+            color: #770901;
+
+            img {
+              border: 3px solid #770901;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div#button-container {
+    button {
+      background-color: #770901;
+      color: #f2efeb;
+      border: 3px solid #f2efeb;
+
+      &:hover {
+        background-color: #f2efeb;
+        color: #770901;
+      }
+    }
+  }
+}
+
+section#faqs {
+  background-color: #f2efeb;
+  color: #770901;
+
+  div#accordionPanelsStayOpenExample {
+    div.accordion-item {
+      h3.accordion-header {
+        button {
+          background-color: #f2efeb;
+          color: #770901;
+          border: 3px solid #770901;
+          box-shadow: none;
+        }
+      }
+
+      div.accordion-collapse {
+        border: 3px solid #770901;
+        border-top: none;
+
+        div.accordion-body {
+          background-color: #770901;
+          color: #f2efeb;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #770901;
+  color: #f2efeb;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  * {
+    font-size: 18px;
+  }
+
+  section#aboutUs {
+    div#aboutUS-reasons {
+      div.row {
+        div.reason-container {
+          div.inner-container {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    div#top {
+      div.col {
+        div#footer-logo {
+          border: 5px solid #f2efeb;
+
+          img {
+            filter: brightness(0) invert(1);
+          }
+        }
+
+        div#bottom-text {
+          address {
+            a {
+              color: #770901;
+              background-color: #f2efeb;
+
+              &:hover {
+                color: #f2efeb;
+                background-color: #770901;
+                border: 3px solid #f2efeb;
+              }
+            }
+          }
+        }
+
+        ul {
+          a {
+            color: #f2efeb;
+          }
+        }
+      }
+    }
+
+    div#bottom {
+      border-top: 3px solid #f2efeb;
+
+      div#footer-terms {
+        span {
+          &:nth-child(even) {
+            background-color: #f2efeb;
+            cursor: pointer;
+
+            a {
+              color: #770901;
+            }
+
+            &:hover {
+              background-color: #770901;
+              border: 3px solid #f2efeb;
+
+              a {
+                color: #f2efeb;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  * {
+    font-size: 20px;
+  }
+
+  section#howItWorks {
+    div#works-instructions {
+      div.row {
+        div {
+          color: #770901;
+          background-color: #f2efeb;
+        }
+      }
+    }
+  }
+}
