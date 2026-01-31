@@ -1,8 +1,6 @@
 const path = require("path")
 const glob = require("glob")
-
 import { defineConfig } from "vite"
-import eslint from "@rollup/plugin-eslint"
 
 let input = {}
 
@@ -18,24 +16,15 @@ glob
 export default defineConfig({
   root: "src",
   build: {
-    manifest: true,
     outDir: "../dist",
     emptyOutDir: true,
     rollupOptions: {
-      input
+      input,
     },
   },
   server: {
     port: 8080,
-    open: "/",
+    open: true,
   },
-  plugins: [
-    {
-      ...eslint({
-        include: ["src/**/*.js"],
-      }),
-      enforce: "pre",
-      apply: "build",
-    },
-  ],
+  plugins: [],
 })
